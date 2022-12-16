@@ -1,0 +1,183 @@
+@page {
+    size: A4; 
+    margin: 60px 20px; 
+}
+@media print and (color) {
+    * {
+       -webkit-print-color-adjust: exact !important;
+       color-adjust: exact !important;
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: rgba(206, 214, 224,1.0);
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+.content-wrapper{
+    width: 70%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 15px;
+}
+
+.card{
+    border-radius: 0 !important;
+}
+
+.card-header{
+    border-radius: 0 !important;
+    background: rgba(70, 91, 117, 0.9);
+}
+
+.card-header h2{
+    color: white !important;
+    padding: 20px 0 10px 0;
+    font-size: 26pt;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.card-header h4{
+    color: white !important;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15pt;
+}
+
+.card-header p{
+    color: white !important;
+    text-align: right;
+    padding: 0px;
+    font-size: 10pt;
+}
+
+.maintable th{
+    background: rgba(70, 91, 117, 0.9) !important;
+    color: white !important;
+    font-size: 15pt;
+    text-align: center;
+}
+
+.maintable td{
+    font-size: 13pt;
+    color: rgb(57, 75, 97);
+    text-align: center;
+}
+
+.maintable tr:nth-child(10n){
+    border-bottom: 2px solid rgba(70, 91, 117, 0.8) !important;
+}
+
+.maintable tr:nth-child(even){
+    background: #ecf0f1 !important;
+}
+
+.maintable tr:hover{
+    background: rgba(70, 91, 117, 0.2) !important;
+    cursor: pointer;
+}
+
+.btn{
+    background: rgba(70, 91, 117, 0.9);
+    color: white;
+    font-size: 14pt;
+    letter-spacing: 2px;
+    border: 1px solid rgb(59, 76, 99);
+    padding: 5px 15px;
+}
+
+.btn:hover{
+    background: transparent;
+    color: rgb(70, 91, 117);
+}
+
+.btn:focus{
+    outline: none !important;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.bck{
+    position: absolute;
+    top: 8%;
+    left: 6%;
+}
+
+.bck a{
+    text-decoration: none;
+}
+
+
+/* Media Query */
+
+@media all and (max-width: 1600px){
+    .content-wrapper{
+        width: 72%;
+    }
+    .maintable th{
+        font-size: 14pt;
+    }
+}
+
+@media all and (max-width: 1100px){
+    .content-wrapper{
+        width: 90%;
+        margin-top: 100px;
+    }
+    .card-header h2{
+        font-size: 22pt;
+    }
+    .card-header h4{
+        font-size: 14pt;
+    }
+    .maintable th{
+        font-size: 13pt;
+    }
+    .maintable td{
+        font-size: 12pt;
+    }
+    .btn{
+        font-size: 12pt;
+    }
+    .bck{
+        top: 4%;
+        left: 5%;
+    }
+}
+
+@media all and (max-width: 700px){
+    .card-header h2{
+        font-size: 18pt;
+    }
+    .content-wrapper{
+        width: 95%;
+        margin-top: 110px;
+    }
+}
+
+@media all and (max-width: 500px){
+    .maintable th{
+        font-size: 12pt;
+    }
+    .card-body{
+        padding: 2px !important;
+        overflow-x: auto !important;
+    }
+}
+
+@media all and (max-width: 320px){
+    .content-wrapper{
+        width: 98%;
+    }
+    .card-header h2{
+        font-size: 16pt;
+    }
+    .card-header h4{
+        font-size: 13pt;
+    }
+    .maintable th{
+        font-size: 12pt;
+    }
+}
